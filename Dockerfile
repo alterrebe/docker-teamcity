@@ -54,6 +54,6 @@ CMD ["/run.sh"]
 # Now install TeamCity and Postgres JDBC driver
 ENV TEAMCITY_DATA_PATH /teamcity
 RUN rm -rf ${CATALINA_HOME}/webapps/* && \
-    wget -q -O ${CATALINA_HOME}/webapps/ROOT.war http://download-cf.jetbrains.com/teamcity/TeamCity-8.1.5.war && \
+    wget -q -O ${CATALINA_HOME}/webapps/ROOT.war http://download-cf.jetbrains.com/teamcity/TeamCity-9.0.1.war && \
     wget -q -O ${CATALINA_HOME}/lib/postgresql-9.3-1102.jdbc41.jar http://jdbc.postgresql.org/download/postgresql-9.3-1102.jdbc41.jar
 
